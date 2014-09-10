@@ -6,3 +6,4 @@ Peace out.
 
 PS: slack-github-integration aktiviert (meldungen für commits an den remote-branch github)
 PPS: erneuter Test ob Web-Hook funzt, denn bisher seh ich im Channel #github noch nichts.
+PPPS: alle guten Dinge sind drei ;)
