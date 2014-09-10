@@ -3,3 +3,5 @@ Oh, doch, n doofer Witz:
 Was macht man mit nen Hund ohne Beine?
 ... um die Häuser ziehen ;)
 Peace out.
+
+PS: slack-github-integration aktiviert (meldungen für commits an den remote-branch github)
