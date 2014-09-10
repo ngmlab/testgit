@@ -1,0 +1,27 @@
+= Wie richte ich Git vollständig ein? =
+
+== Passwortloses Arbeiten ==
+Sobald euer SSH-Key (mir geben oder in ~/.ssh/id_rsa.pub schreiben) bekannt ist,
+füge ich ihn ins Github-Repo ein. Andernfalls könnt ihr einen Github-Account einrichten
+und mir den Account-Namen zukommen lassen.
+
+=== SSH-Config ===
+
+Wechselt in das SSH-Konfig-Verzeichnis
+	 cd  ~./ssh
+Und öffnet / erstell eine config-Datei:
+ 	vim config
+Dort fügt ihr folgendes ein:
+ 	cat >> config <<EOF
+	Host ngm.github.com
+    		HostName github.com
+    		User git
+    		IdentityFile ~/.ssh/id_rsa 
+ 	EOF
+
+Und in eurem Git-Repo könnt ihr dann mit folgenden Kommando
+das Remote-Repo verfügbar machen:
+	git remote add github https://github.com/ngmlab/testgit.git 
+
+
+url: http://stackoverflow.com/questions/14762034/push-to-github-without-password-using-ssh-key
